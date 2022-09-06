@@ -1,0 +1,48 @@
+/*about*/
+.about {
+    text-align: center;
+
+    
+    &__paragraph {
+        line-height: 1.7;
+    }
+    
+    &__main {
+        padding-top: 80px;
+        display: grid;
+        width: 90%;
+        margin: 0 auto;
+        gap: 1em;
+        overflow: hidden;
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    }
+    
+    &__icons {
+        display: grid;
+        gap: 1em;
+        justify-items: center;
+        width: 260px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    &__icon {
+        width: 40px;
+    }
+}
+
+.subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+@media (max-width:800px){
+    .about__main{
+        gap: 2em;
+    }
+
+    .about__icons:last-of-type{
+        grid-column: 1/-1;
+    }
+}

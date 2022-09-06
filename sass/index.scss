@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001a49;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+
+
+@import './modules/hero';
+@import './modules/nav';
+@import './modules/cta';
+@import './modules/about';
+@import './modules/knowledge';
+@import './modules/price';
+@import './modules/testimony';
+@import './modules/questions';
+@import './modules/footer';
