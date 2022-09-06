@@ -90,7 +90,7 @@
 
     .nav__link--menu{
         position: fixed;
-        background-color: #000;
+        background-color: #001a49;
         top: 0;
         left: 0;
         height: 100%;
@@ -103,12 +103,12 @@
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+    }
 
-        &--show{
-            --show: block;
-            opacity:1 ;
-            pointer-events: unset;
-        }
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
     }
 
     .nav__close{
@@ -128,7 +128,9 @@
         justify-content: space-evenly;
         margin: 0;
     }
+
 }
+
 @media (max-width:600px){
     .nav--footer{
         padding-bottom: 60px;

@@ -144,7 +144,7 @@
   }
   .nav__link--menu {
     position: fixed;
-    background-color: #000;
+    background-color: #001a49;
     top: 0;
     left: 0;
     height: 100%;
@@ -158,7 +158,7 @@
     pointer-events: none;
     transition: 0.7s opacity;
   }
-  .nav__link--menu--show {
+  .nav__link--show {
     --show: block;
     opacity: 1;
     pointer-events: unset;
@@ -574,19 +574,15 @@
   font-weight: 300;
 }
 .footer__icons {
+  font-size: 1.5rem;
+  transition: transform 0.25s;
   margin-bottom: 10px;
+  color: #fff;
+  padding: 1rem;
 }
 .footer__icons:hover {
   color: #ffd700;
-}
-.footer__img {
-  font-size: 1.75rem;
-  transition: transform 0.25s;
-  color: #fff;
-}
-.footer__img:hover {
-  transform: scale(1.25);
-  color: #ffd700;
+  transform: scale(1.5);
 }
 
 @media (max-width: 800px) {
